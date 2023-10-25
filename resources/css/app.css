@@ -1,0 +1,92 @@
+.user-avatar {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    transition: all 0.5s;
+}
+
+.user-avatar:hover {
+    scale: 1.05;
+}
+
+.user-link-container .user-link-item>.user-link-item-title>.user-link-item-icon {
+    font-size: 18px;
+}
+
+.user-link-container .user-link-item {
+    width: 250px;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+.user-link-container .user-link-item:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 15px #000;
+}
+
+.user-link-container .user-link-item:hover>.user-link-item-title {
+    color: #000;
+}
+
+.user-link-container .user-link-item>.user-link-item-description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.user-link-container .user-link-item:hover>.user-link-item-description {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.user-link-container .user-link-item>.user-link-item-action {
+    color: red;
+}
+
+/* Icon selector */
+/* https://codepen.io/nikkipantony/pen/wpPGZp */
+.rating-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .rating-container .rating {
+    padding: 0.4rem 0.8rem;
+    border-radius: 2.2rem;
+  }
+
+  .rating-container.rating-container i {
+    color: #9fc6e4;
+    font-size: 42px;
+    margin: 0.2rem;
+  }
+
+ .rating-container #radios label {
+    position: relative;
+  }
+
+ .rating-container input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+
+ .rating-container input[type="radio"] + i {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+ .rating-container input + i {
+    cursor: pointer;
+  }
+
+ .rating-container input:hover + i,
+ .rating-container input:checked + i,
+ .rating-container input:focus + i {
+    color: #fff;
+    text-shadow: 0px 0px 10px #fff;
+  }
